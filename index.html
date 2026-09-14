@@ -6,121 +6,107 @@
 <title>Jin Yang</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
 <style>
   html { -webkit-text-size-adjust: 100%; }
   body {
     font-family: Newsreader, Charter, Georgia, serif;
     font-size: 19px;
-    line-height: 1.6;
+    font-weight: 420;
+    line-height: 1.62;
     color: #1a1a1a;
     background: #ffffff;
     max-width: 720px;
     margin: 56px auto 80px;
     padding: 0 28px;
   }
-  a { color: #2f5680; text-decoration: none; border-bottom: 1px solid rgba(47, 86, 128, .3); }
+
+  a { color: #2f5680; text-decoration: none; border-bottom: 1px solid rgba(47, 86, 128, .32); }
   a:hover { border-bottom-color: #2f5680; }
   sup { line-height: 0; }
+
   h1 {
-    font-family: Newsreader, serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 44px;
     line-height: 1.1;
-    letter-spacing: -0.012em;
+    letter-spacing: -0.014em;
     margin: 0 0 6px;
   }
-  h1 .kr { color: #888; font-weight: 400; font-size: 0.5em; margin-left: 0.28em; letter-spacing: 0; }
+  h1 .kr { color: #7a7a7a; font-weight: 400; font-size: 0.5em; margin-left: 0.28em; letter-spacing: 0; }
+
   h2 {
-    font-family: Newsreader, serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 26px;
-    letter-spacing: -0.006em;
-    margin: 52px 0 16px;
+    letter-spacing: -0.008em;
+    margin: 52px 0 18px;
     color: #1a1a1a;
   }
+
   p { margin: 0 0 16px; }
-  em { color: inherit; }
+
   .lede {
     font-size: 17px;
-    color: #666;
-    margin: 4px 0 18px;
+    color: #5a5a5a;
     font-style: italic;
+    margin: 4px 0 20px;
   }
-  .top { display: flex; gap: 32px; align-items: center; margin-bottom: 4px; }
+
+  .top { display: flex; gap: 34px; align-items: center; margin-bottom: 4px; }
   .top .text { flex: 1; min-width: 0; }
   .top img {
-    width: 130px; height: 130px; border-radius: 50%;
+    width: 128px; height: 128px;
+    border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 1px 0 rgba(0,0,0,.08);
   }
-  .contact { font-size: 16px; color: #666; }
-  .contact a { margin-right: 14px; }
-
-  .project { margin: 0 0 18px; }
-  .project .pname {
-    font-weight: 600;
-    font-style: italic;
-    font-size: 20px;
-  }
-  .project .pmeta { color: #888; font-size: 15px; font-style: normal; margin-left: 4px; }
+  .contact { font-size: 17px; color: #5a5a5a; }
+  .contact a { margin-right: 16px; }
 
   .pub { margin: 0 0 22px; }
-  .pub .title { font-weight: 500; }
-  .pub .authors { color: #555; font-style: italic; font-size: 17.5px; }
-  .pub .authors .me { font-style: normal; color: #1a1a1a; border-bottom: 1px dotted #bbb; }
+  .pub .title { font-weight: 600; font-size: 20px; line-height: 1.35; }
+  .pub .authors { color: #3a3a3a; font-size: 17px; margin-top: 3px; }
+  .pub .authors .me { border-bottom: 1px dotted #a8a8a8; }
   .pub .venue {
-    color: #666;
+    color: #5a5a5a;
     font-size: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
-    margin-top: 3px;
+    margin-top: 4px;
   }
-  .pub .venue .name { color: #333; font-weight: 500; }
-  .pub .venue .sep { color: #bbb; }
-  .pub .venue .toappear { font-style: italic; color: #888; }
-  .tag {
-    display: inline-block;
-    font-size: 11.5px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
+  .pub .venue .name { color: #2a2a2a; font-weight: 500; }
+  .pub .venue .sep { color: #b8b8b8; margin: 0 6px; }
+  .pub .venue .toappear { font-style: italic; }
+  .pub .venue .tier {
+    font-weight: 700;
+    font-size: 12.5px;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    padding: 2px 8px;
-    color: #666;
-    border: 1px solid #ccc;
-    border-radius: 2px;
+    color: #4a4a4a;
+    margin-left: 4px;
     vertical-align: 1px;
-    font-family: Newsreader, serif;
   }
-  .tag.tier {
-    background: #7a1e26;
-    color: #fff;
-    border-color: #7a1e26;
-    letter-spacing: 0.1em;
-  }
-  .pub .plinks { font-size: 15px; color: #888; margin-top: 4px; }
-  .pub .plinks a { color: #2f5680; }
+  .pub .plinks { font-size: 15px; color: #7a7a7a; margin-top: 5px; }
+  .pub .plinks a { color: #2f5680; margin-right: 4px; }
 
   .row { display: flex; gap: 18px; margin-bottom: 8px; align-items: baseline; }
-  .row .yr { flex: 0 0 105px; color: #888; font-size: 16px; font-variant-numeric: oldstyle-nums; }
+  .row .yr { flex: 0 0 105px; color: #7a7a7a; font-size: 16px; font-variant-numeric: oldstyle-nums; }
   .row .what { flex: 1; }
 
   ul.patents { padding-left: 0; list-style: none; margin: 0; }
   ul.patents li { margin-bottom: 16px; }
-  ul.patents .title { font-weight: 500; }
-  ul.patents .who { color: #555; font-style: italic; font-size: 17.5px; }
-  ul.patents .who .me { font-style: normal; color: #1a1a1a; border-bottom: 1px dotted #bbb; }
-  ul.patents .meta { color: #666; font-size: 16px; }
+  ul.patents .title { font-weight: 600; font-size: 19px; line-height: 1.35; }
+  ul.patents .who { color: #3a3a3a; font-size: 17px; margin-top: 3px; }
+  ul.patents .who .me { border-bottom: 1px dotted #a8a8a8; }
+  ul.patents .meta { color: #5a5a5a; font-size: 16px; margin-top: 3px; }
+
+  .teaching-note { color: #5a5a5a; font-size: 16px; margin: -8px 0 12px; font-style: italic; }
 
   footer {
     margin-top: 60px;
-    color: #888;
+    color: #7a7a7a;
     font-size: 15px;
     text-align: center;
     font-style: italic;
   }
+
   @media (max-width: 560px) {
     body { font-size: 18px; margin-top: 32px; }
     h1 { font-size: 34px; }
@@ -151,86 +137,58 @@
 <h2>About</h2>
 <p>I recently finished my Ph.D. in Computer Science at UNIST (Aug. 2026), where I worked in the
 <a href="https://ychoi.unist.ac.kr/ssl">System Software Laboratory</a> under
-<a href="https://ychoi.unist.ac.kr/">Young-ri Choi</a>. My research is on the indexing and caching
-machinery inside key-value stores — designs that adapt to how the data is shaped and how workloads
-actually access it, rather than treating those as adversarial black boxes.</p>
-
-<h2>Selected projects</h2>
-
-<div class="project">
-  <span class="pname">TreePass</span><span class="pmeta"> — FAST 2027</span>
-  <p>A B<sup>+</sup>-tree-aware buffer cache for SplinterDB. TreePass tucks small counters into the
-  tree's pivot entries; the cache reads them to spot cold subtrees and evict cold pages early,
-  cutting write amplification without any extra bookkeeping.</p>
-</div>
-
-<div class="project">
-  <span class="pname">DyTIS</span><span class="pmeta"> — EuroSys 2023</span>
-  <p>A dynamic hash index. Ordinary extendible hashing degrades when keys are skewed or the dataset
-  drifts over time; DyTIS restructures itself in place so lookups stay near-constant and inserts
-  remain cheap on the messy datasets that appear in practice.</p>
-</div>
+<a href="https://ychoi.unist.ac.kr/">Young-ri Choi</a>. My research is on indexing and caching for
+key-value stores, with a focus on designs that adapt to the data distribution and the workload.</p>
 
 <h2>Publications</h2>
 
 <div class="pub">
-  <span class="title">TreePass: Lightweight Tree-Guided Cache Management for B<sup>+</sup>-tree Key-Value Stores</span><br>
-  <span class="authors"><span class="me">Jin Yang</span>, Hyeonseok Oh, Young-ri Choi.</span>
+  <div class="title">TreePass: Lightweight Tree-Guided Cache Management for B<sup>+</sup>-tree Key-Value Stores</div>
+  <div class="authors"><span class="me">Jin Yang</span>, Hyeonseok Oh, Young-ri Choi.</div>
   <div class="venue">
-    <span class="name">USENIX FAST 2027</span>
-    <span class="toappear">(to appear)</span>
-    <span class="tag tier">top-tier</span>
-    <span class="sep">·</span>
-    <span>19.6% acc. rate (18/92, Spring cycle)</span>
+    <span class="name">USENIX FAST 2027</span> <span class="toappear">(to appear)</span><span class="tier">· top-tier</span><span class="sep">·</span>19.6% acc. rate (18/92, Spring cycle)
   </div>
-  <div class="plinks">[<a href="https://github.com/unist-ssl/TreePass">code</a>]</div>
+  <div class="plinks"><a href="https://github.com/unist-ssl/TreePass">code</a></div>
 </div>
 
 <div class="pub">
-  <span class="title">A Dynamic Characteristic Aware Index Structure Optimized for Real-world Datasets</span><br>
-  <span class="authors"><span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, Sam H. Noh, Young-ri Choi.</span>
+  <div class="title">A Dynamic Characteristic Aware Index Structure Optimized for Real-world Datasets</div>
+  <div class="authors"><span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, Sam H. Noh, Young-ri Choi.</div>
   <div class="venue">
-    <span class="name">ACM Transactions on Storage, 21(2), 2025</span>
+    <span class="name">ACM Transactions on Storage</span><span class="sep">·</span>21(2), 2025
   </div>
-  <div class="plinks">[<a href="https://doi.org/10.1145/3707642">paper</a>]</div>
+  <div class="plinks"><a href="https://doi.org/10.1145/3707642">paper</a></div>
 </div>
 
 <div class="pub">
-  <span class="title">Advocating for Key-Value Stores with Workload Pattern Aware Dynamic Compaction</span><br>
-  <span class="authors">Heejin Yoon, <span class="me">Jin Yang</span>, Juyoung Bang, Sam H. Noh, Young-ri Choi.</span>
+  <div class="title">Advocating for Key-Value Stores with Workload Pattern Aware Dynamic Compaction</div>
+  <div class="authors">Heejin Yoon, <span class="me">Jin Yang</span>, Juyoung Bang, Sam H. Noh, Young-ri Choi.</div>
   <div class="venue">
-    <span class="name">ACM HotStorage 2024</span>
-    <span class="sep">·</span>
-    <span>16th Workshop on Hot Topics in Storage and File Systems</span>
+    <span class="name">ACM HotStorage 2024</span><span class="sep">·</span>16th Workshop on Hot Topics in Storage and File Systems
   </div>
-  <div class="plinks">[<a href="https://doi.org/10.1145/3655038.3665955">paper</a>]</div>
+  <div class="plinks"><a href="https://doi.org/10.1145/3655038.3665955">paper</a></div>
 </div>
 
 <div class="pub">
-  <span class="title">DyTIS: A Dynamic Dataset Targeted Index Structure Simultaneously Efficient for Search, Insert, and Scan</span><br>
-  <span class="authors"><span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, Sam H. Noh, Young-ri Choi.</span>
+  <div class="title">DyTIS: A Dynamic Dataset Targeted Index Structure Simultaneously Efficient for Search, Insert, and Scan</div>
+  <div class="authors"><span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, Sam H. Noh, Young-ri Choi.</div>
   <div class="venue">
-    <span class="name">EuroSys 2023</span>
-    <span class="tag tier">top-tier</span>
-    <span class="sep">·</span>
-    <span>16.7% acc. rate (54/323)</span>
-    <span class="sep">·</span>
-    <span>Rome, Italy</span>
+    <span class="name">EuroSys 2023</span><span class="tier">· top-tier</span><span class="sep">·</span>16.7% acc. rate (54/323)<span class="sep">·</span>Rome, Italy
   </div>
-  <div class="plinks">[<a href="https://doi.org/10.1145/3552326.3587434">paper</a>] [<a href="https://github.com/unist-ssl/DyTIS">code</a>]</div>
+  <div class="plinks"><a href="https://doi.org/10.1145/3552326.3587434">paper</a> &nbsp; <a href="https://github.com/unist-ssl/DyTIS">code</a></div>
 </div>
 
 <h2>Patents</h2>
 <ul class="patents">
   <li>
-    <span class="title">Method and Apparatus for Performing Dynamic Hashing to Store Key Values in an Ordered State</span><br>
-    <span class="who">Young-ri Choi, <span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, Sam H. Noh.</span><br>
-    <span class="meta">KR 10-2683404 (granted Jul. 2024); US 2024/0048358 A1 (Feb. 2024).</span>
+    <div class="title">Method and Apparatus for Performing Dynamic Hashing to Store Key Values in an Ordered State</div>
+    <div class="who">Young-ri Choi, <span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, Sam H. Noh.</div>
+    <div class="meta">KR 10-2683404 (granted Jul. 2024) &nbsp;·&nbsp; US 2024/0048358 A1 (Feb. 2024)</div>
   </li>
   <li>
-    <span class="title">Method and Apparatus for Converting Data Key Value</span><br>
-    <span class="who">Young-ri Choi, Songyi Lee, <span class="me">Jin Yang</span>, Sam H. Noh.</span><br>
-    <span class="meta">KR 10-2388458 (granted Apr. 2022).</span>
+    <div class="title">Method and Apparatus for Converting Data Key Value</div>
+    <div class="who">Young-ri Choi, Songyi Lee, <span class="me">Jin Yang</span>, Sam H. Noh.</div>
+    <div class="meta">KR 10-2388458 (granted Apr. 2022)</div>
   </li>
 </ul>
 
@@ -239,10 +197,10 @@ actually access it, rather than treating those as adversarial black boxes.</p>
 <div class="row"><span class="yr">2015 &ndash; 2019</span><span class="what">B.S. in Computer Science &amp; Engineering (Mathematics minor), UNIST.</span></div>
 
 <h2>Teaching</h2>
-<p class="lede" style="margin-top:-6px">Teaching assistant, UNIST.</p>
+<p class="teaching-note">Teaching assistant, UNIST.</p>
 <div class="row"><span class="yr">2022</span><span class="what">Introduction to Human-Computer Interaction</span></div>
-<div class="row"><span class="yr">2021</span><span class="what">Data Structures; Advanced Programming</span></div>
-<div class="row"><span class="yr">2020</span><span class="what">Operating Systems; Computer Networks</span></div>
+<div class="row"><span class="yr">2021</span><span class="what">Data Structures &nbsp;·&nbsp; Advanced Programming</span></div>
+<div class="row"><span class="yr">2020</span><span class="what">Operating Systems &nbsp;·&nbsp; Computer Networks</span></div>
 <div class="row"><span class="yr">2019</span><span class="what">Introduction to AI Programming 2</span></div>
 <div class="row"><span class="yr">2016</span><span class="what">Linear Algebra</span></div>
 
