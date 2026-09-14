@@ -13,13 +13,13 @@
     font-family: Newsreader, Charter, Georgia, serif;
     font-size: 19px;
     line-height: 1.6;
-    color: #1f1c17;
-    background: #f8f6f0;
+    color: #1a1a1a;
+    background: #ffffff;
     max-width: 720px;
     margin: 56px auto 80px;
     padding: 0 28px;
   }
-  a { color: #2f5680; text-decoration: none; border-bottom: 1px solid rgba(47, 86, 128, .28); }
+  a { color: #2f5680; text-decoration: none; border-bottom: 1px solid rgba(47, 86, 128, .3); }
   a:hover { border-bottom-color: #2f5680; }
   sup { line-height: 0; }
   h1 {
@@ -30,20 +30,20 @@
     letter-spacing: -0.012em;
     margin: 0 0 6px;
   }
-  h1 .kr { color: #8a7f6f; font-weight: 400; font-size: 0.5em; margin-left: 0.28em; letter-spacing: 0; }
+  h1 .kr { color: #888; font-weight: 400; font-size: 0.5em; margin-left: 0.28em; letter-spacing: 0; }
   h2 {
     font-family: Newsreader, serif;
     font-weight: 500;
     font-size: 26px;
     letter-spacing: -0.006em;
     margin: 52px 0 16px;
-    color: #1f1c17;
+    color: #1a1a1a;
   }
   p { margin: 0 0 16px; }
   em { color: inherit; }
   .lede {
     font-size: 17px;
-    color: #6b6355;
+    color: #666;
     margin: 4px 0 18px;
     font-style: italic;
   }
@@ -54,15 +54,23 @@
     object-fit: cover;
     box-shadow: 0 1px 0 rgba(0,0,0,.08);
   }
-  .contact { font-size: 16px; color: #6b6355; }
+  .contact { font-size: 16px; color: #666; }
   .contact a { margin-right: 14px; }
+
+  .project { margin: 0 0 18px; }
+  .project .pname {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 20px;
+  }
+  .project .pmeta { color: #888; font-size: 15px; font-style: normal; margin-left: 4px; }
 
   .pub { margin: 0 0 22px; }
   .pub .title { font-weight: 500; }
-  .pub .authors { color: #4a4238; font-style: italic; font-size: 17.5px; }
-  .pub .authors .me { font-style: normal; color: #1f1c17; border-bottom: 1px dotted #b8ac98; }
+  .pub .authors { color: #555; font-style: italic; font-size: 17.5px; }
+  .pub .authors .me { font-style: normal; color: #1a1a1a; border-bottom: 1px dotted #bbb; }
   .pub .venue {
-    color: #6b6355;
+    color: #666;
     font-size: 16px;
     display: flex;
     flex-wrap: wrap;
@@ -70,39 +78,45 @@
     gap: 8px;
     margin-top: 3px;
   }
-  .pub .venue .name { color: #4a4238; }
-  .pub .venue .sep { color: #b8ac98; }
-  .pub .venue .toappear { font-style: italic; color: #7a6f5e; }
+  .pub .venue .name { color: #333; font-weight: 500; }
+  .pub .venue .sep { color: #bbb; }
+  .pub .venue .toappear { font-style: italic; color: #888; }
   .tag {
     display: inline-block;
-    font-size: 12.5px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    padding: 1px 8px;
-    border: 1px solid #c8beb0;
-    border-radius: 3px;
-    color: #6b6355;
+    padding: 2px 8px;
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 2px;
     vertical-align: 1px;
+    font-family: Newsreader, serif;
   }
-  .tag.tier { color: #7a5a1e; border-color: #d8c99a; }
-  .pub .plinks { font-size: 15px; color: #8a7f6f; margin-top: 4px; }
+  .tag.tier {
+    background: #7a1e26;
+    color: #fff;
+    border-color: #7a1e26;
+    letter-spacing: 0.1em;
+  }
+  .pub .plinks { font-size: 15px; color: #888; margin-top: 4px; }
   .pub .plinks a { color: #2f5680; }
 
   .row { display: flex; gap: 18px; margin-bottom: 8px; align-items: baseline; }
-  .row .yr { flex: 0 0 105px; color: #8a7f6f; font-size: 16px; font-variant-numeric: oldstyle-nums; }
+  .row .yr { flex: 0 0 105px; color: #888; font-size: 16px; font-variant-numeric: oldstyle-nums; }
   .row .what { flex: 1; }
 
   ul.patents { padding-left: 0; list-style: none; margin: 0; }
   ul.patents li { margin-bottom: 16px; }
   ul.patents .title { font-weight: 500; }
-  ul.patents .who { color: #4a4238; font-style: italic; font-size: 17.5px; }
-  ul.patents .who .me { font-style: normal; color: #1f1c17; border-bottom: 1px dotted #b8ac98; }
-  ul.patents .meta { color: #6b6355; font-size: 16px; }
+  ul.patents .who { color: #555; font-style: italic; font-size: 17.5px; }
+  ul.patents .who .me { font-style: normal; color: #1a1a1a; border-bottom: 1px dotted #bbb; }
+  ul.patents .meta { color: #666; font-size: 16px; }
 
   footer {
     margin-top: 60px;
-    color: #8a7f6f;
+    color: #888;
     font-size: 15px;
     text-align: center;
     font-style: italic;
@@ -137,25 +151,25 @@
 <h2>About</h2>
 <p>I recently finished my Ph.D. in Computer Science at UNIST (Aug. 2026), where I worked in the
 <a href="https://ychoi.unist.ac.kr/ssl">System Software Laboratory</a> under
-<a href="https://ychoi.unist.ac.kr/">Young-ri Choi</a>.</p>
+<a href="https://ychoi.unist.ac.kr/">Young-ri Choi</a>. My research is on the indexing and caching
+machinery inside key-value stores — designs that adapt to how the data is shaped and how workloads
+actually access it, rather than treating those as adversarial black boxes.</p>
 
-<p>My research designs the indexing and caching machinery inside key-value stores. I am
-interested in how these systems can stay efficient by adapting to the shape of the data and
-the pattern of the workload, rather than treating them as adversarial black boxes. Two
-projects give the flavor:</p>
+<h2>Selected projects</h2>
 
-<p><em>DyTIS</em> (EuroSys 2023) is a dynamic hash index. Ordinary extendible hashing degrades
-when keys are skewed or the dataset drifts over time; DyTIS restructures itself in place so
-lookups stay near-constant and inserts remain cheap on the messy datasets that appear in
-practice.</p>
+<div class="project">
+  <span class="pname">TreePass</span><span class="pmeta"> — FAST 2027</span>
+  <p>A B<sup>+</sup>-tree-aware buffer cache for SplinterDB. TreePass tucks small counters into the
+  tree's pivot entries; the cache reads them to spot cold subtrees and evict cold pages early,
+  cutting write amplification without any extra bookkeeping.</p>
+</div>
 
-<p><em>TreePass</em> (FAST 2027) is a B<sup>+</sup>-tree-aware buffer cache for SplinterDB. It
-tucks small counters into the tree's pivot entries; the cache reads them to spot cold
-subtrees and evict cold pages early, cutting write amplification without any extra
-bookkeeping.</p>
-
-<p>I care about building things that are simple enough to reason about and small enough to
-land in a real system.</p>
+<div class="project">
+  <span class="pname">DyTIS</span><span class="pmeta"> — EuroSys 2023</span>
+  <p>A dynamic hash index. Ordinary extendible hashing degrades when keys are skewed or the dataset
+  drifts over time; DyTIS restructures itself in place so lookups stay near-constant and inserts
+  remain cheap on the messy datasets that appear in practice.</p>
+</div>
 
 <h2>Publications</h2>
 
@@ -165,9 +179,9 @@ land in a real system.</p>
   <div class="venue">
     <span class="name">USENIX FAST 2027</span>
     <span class="toappear">(to appear)</span>
+    <span class="tag tier">top-tier</span>
     <span class="sep">·</span>
     <span>19.6% acc. rate (18/92, Spring cycle)</span>
-    <span class="tag tier">top-tier</span>
   </div>
   <div class="plinks">[<a href="https://github.com/unist-ssl/TreePass">code</a>]</div>
 </div>
@@ -197,11 +211,11 @@ land in a real system.</p>
   <span class="authors"><span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, Sam H. Noh, Young-ri Choi.</span>
   <div class="venue">
     <span class="name">EuroSys 2023</span>
+    <span class="tag tier">top-tier</span>
     <span class="sep">·</span>
     <span>16.7% acc. rate (54/323)</span>
     <span class="sep">·</span>
     <span>Rome, Italy</span>
-    <span class="tag tier">top-tier</span>
   </div>
   <div class="plinks">[<a href="https://doi.org/10.1145/3552326.3587434">paper</a>] [<a href="https://github.com/unist-ssl/DyTIS">code</a>]</div>
 </div>
