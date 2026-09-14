@@ -13,67 +13,96 @@
     font-family: Newsreader, Charter, Georgia, serif;
     font-size: 19px;
     line-height: 1.6;
-    color: #2b2622;
-    background: #fbf7ef;
-    max-width: 700px;
+    color: #1f1c17;
+    background: #f8f6f0;
+    max-width: 720px;
     margin: 56px auto 80px;
     padding: 0 28px;
   }
-  a { color: #34597a; text-decoration: none; border-bottom: 1px solid rgba(52, 89, 122, .3); }
-  a:hover { border-bottom-color: #34597a; }
+  a { color: #2f5680; text-decoration: none; border-bottom: 1px solid rgba(47, 86, 128, .28); }
+  a:hover { border-bottom-color: #2f5680; }
+  sup { line-height: 0; }
   h1 {
     font-family: Newsreader, serif;
     font-weight: 500;
-    font-size: 42px;
+    font-size: 44px;
     line-height: 1.1;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.012em;
     margin: 0 0 6px;
   }
-  h1 .kr { color: #8a7a68; font-weight: 400; font-size: 0.55em; margin-left: 0.25em; }
+  h1 .kr { color: #8a7f6f; font-weight: 400; font-size: 0.5em; margin-left: 0.28em; letter-spacing: 0; }
   h2 {
     font-family: Newsreader, serif;
     font-weight: 500;
     font-size: 26px;
-    letter-spacing: -0.005em;
-    margin: 50px 0 16px;
-    color: #3d322a;
+    letter-spacing: -0.006em;
+    margin: 52px 0 16px;
+    color: #1f1c17;
   }
   p { margin: 0 0 16px; }
-  em { color: #4a3f36; }
+  em { color: inherit; }
   .lede {
     font-size: 17px;
-    color: #5a4e42;
+    color: #6b6355;
     margin: 4px 0 18px;
     font-style: italic;
   }
   .top { display: flex; gap: 32px; align-items: center; margin-bottom: 4px; }
   .top .text { flex: 1; min-width: 0; }
   .top img {
-    width: 128px; height: 128px; border-radius: 50%;
+    width: 130px; height: 130px; border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 1px 0 rgba(0,0,0,.08);
   }
-  .contact { font-size: 16px; color: #5a4e42; }
+  .contact { font-size: 16px; color: #6b6355; }
   .contact a { margin-right: 14px; }
-  .pub { margin: 0 0 18px; }
+
+  .pub { margin: 0 0 22px; }
   .pub .title { font-weight: 500; }
-  .pub .authors { color: #4a3f36; font-style: italic; font-size: 17px; }
-  .pub .authors .me { font-style: normal; color: #2b2622; border-bottom: 1px dotted #b8a89a; }
-  .pub .venue { color: #6b5d4f; font-size: 16px; }
-  .pub .plinks { font-size: 15px; color: #8a7a68; margin-left: 6px; }
-  .pub .plinks a { color: #34597a; }
+  .pub .authors { color: #4a4238; font-style: italic; font-size: 17.5px; }
+  .pub .authors .me { font-style: normal; color: #1f1c17; border-bottom: 1px dotted #b8ac98; }
+  .pub .venue {
+    color: #6b6355;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-top: 3px;
+  }
+  .pub .venue .name { color: #4a4238; }
+  .pub .venue .sep { color: #b8ac98; }
+  .pub .venue .toappear { font-style: italic; color: #7a6f5e; }
+  .tag {
+    display: inline-block;
+    font-size: 12.5px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding: 1px 8px;
+    border: 1px solid #c8beb0;
+    border-radius: 3px;
+    color: #6b6355;
+    vertical-align: 1px;
+  }
+  .tag.tier { color: #7a5a1e; border-color: #d8c99a; }
+  .pub .plinks { font-size: 15px; color: #8a7f6f; margin-top: 4px; }
+  .pub .plinks a { color: #2f5680; }
+
   .row { display: flex; gap: 18px; margin-bottom: 8px; align-items: baseline; }
-  .row .yr { flex: 0 0 105px; color: #8a7a68; font-size: 16px; font-variant-numeric: oldstyle-nums; }
+  .row .yr { flex: 0 0 105px; color: #8a7f6f; font-size: 16px; font-variant-numeric: oldstyle-nums; }
   .row .what { flex: 1; }
+
   ul.patents { padding-left: 0; list-style: none; margin: 0; }
-  ul.patents li { margin-bottom: 14px; }
+  ul.patents li { margin-bottom: 16px; }
   ul.patents .title { font-weight: 500; }
-  ul.patents .who { color: #4a3f36; font-style: italic; font-size: 17px; }
-  ul.patents .who .me { font-style: normal; color: #2b2622; border-bottom: 1px dotted #b8a89a; }
-  ul.patents .meta { color: #6b5d4f; font-size: 16px; }
+  ul.patents .who { color: #4a4238; font-style: italic; font-size: 17.5px; }
+  ul.patents .who .me { font-style: normal; color: #1f1c17; border-bottom: 1px dotted #b8ac98; }
+  ul.patents .meta { color: #6b6355; font-size: 16px; }
+
   footer {
     margin-top: 60px;
-    color: #8a7a68;
+    color: #8a7f6f;
     font-size: 15px;
     text-align: center;
     font-style: italic;
@@ -132,30 +161,49 @@ land in a real system.</p>
 
 <div class="pub">
   <span class="title">TreePass: Lightweight Tree-Guided Cache Management for B<sup>+</sup>-tree Key-Value Stores</span><br>
-  <span class="authors"><span class="me">Jin Yang</span>, Hyeonseok Oh, Young-ri Choi.</span><br>
-  <span class="venue">USENIX FAST 2027 (to appear).</span>
-  <span class="plinks">[<a href="https://github.com/unist-ssl/TreePass">code</a>]</span>
+  <span class="authors"><span class="me">Jin Yang</span>, Hyeonseok Oh, Young-ri Choi.</span>
+  <div class="venue">
+    <span class="name">USENIX FAST 2027</span>
+    <span class="toappear">(to appear)</span>
+    <span class="sep">·</span>
+    <span>19.6% acc. rate (18/92, Spring cycle)</span>
+    <span class="tag tier">top-tier</span>
+  </div>
+  <div class="plinks">[<a href="https://github.com/unist-ssl/TreePass">code</a>]</div>
 </div>
 
 <div class="pub">
   <span class="title">A Dynamic Characteristic Aware Index Structure Optimized for Real-world Datasets</span><br>
-  <span class="authors"><span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, Sam H. Noh, Young-ri Choi.</span><br>
-  <span class="venue">ACM Transactions on Storage, 21(2), 2025.</span>
-  <span class="plinks">[<a href="https://doi.org/10.1145/3707642">paper</a>]</span>
+  <span class="authors"><span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, Sam H. Noh, Young-ri Choi.</span>
+  <div class="venue">
+    <span class="name">ACM Transactions on Storage, 21(2), 2025</span>
+  </div>
+  <div class="plinks">[<a href="https://doi.org/10.1145/3707642">paper</a>]</div>
 </div>
 
 <div class="pub">
   <span class="title">Advocating for Key-Value Stores with Workload Pattern Aware Dynamic Compaction</span><br>
-  <span class="authors">Heejin Yoon, <span class="me">Jin Yang</span>, Juyoung Bang, Sam H. Noh, Young-ri Choi.</span><br>
-  <span class="venue">ACM HotStorage 2024.</span>
-  <span class="plinks">[<a href="https://doi.org/10.1145/3655038.3665955">paper</a>]</span>
+  <span class="authors">Heejin Yoon, <span class="me">Jin Yang</span>, Juyoung Bang, Sam H. Noh, Young-ri Choi.</span>
+  <div class="venue">
+    <span class="name">ACM HotStorage 2024</span>
+    <span class="sep">·</span>
+    <span>16th Workshop on Hot Topics in Storage and File Systems</span>
+  </div>
+  <div class="plinks">[<a href="https://doi.org/10.1145/3655038.3665955">paper</a>]</div>
 </div>
 
 <div class="pub">
   <span class="title">DyTIS: A Dynamic Dataset Targeted Index Structure Simultaneously Efficient for Search, Insert, and Scan</span><br>
-  <span class="authors"><span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, Sam H. Noh, Young-ri Choi.</span><br>
-  <span class="venue">EuroSys 2023.</span>
-  <span class="plinks">[<a href="https://doi.org/10.1145/3552326.3587434">paper</a>] [<a href="https://github.com/unist-ssl/DyTIS">code</a>]</span>
+  <span class="authors"><span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, Sam H. Noh, Young-ri Choi.</span>
+  <div class="venue">
+    <span class="name">EuroSys 2023</span>
+    <span class="sep">·</span>
+    <span>16.7% acc. rate (54/323)</span>
+    <span class="sep">·</span>
+    <span>Rome, Italy</span>
+    <span class="tag tier">top-tier</span>
+  </div>
+  <div class="plinks">[<a href="https://doi.org/10.1145/3552326.3587434">paper</a>] [<a href="https://github.com/unist-ssl/DyTIS">code</a>]</div>
 </div>
 
 <h2>Patents</h2>
