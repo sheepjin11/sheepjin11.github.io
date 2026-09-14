@@ -63,7 +63,7 @@
   .contact a { margin-right: 16px; }
 
   .pub {
-    margin: 0 0 18px;
+    margin: 0 0 24px;
     padding-left: 20px;
     position: relative;
   }
@@ -71,17 +71,34 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 0.75em;
+    top: 0.55em;
     width: 5px;
     height: 5px;
     border-radius: 50%;
     background: #999;
   }
-  .pub .me { text-decoration: underline; text-underline-offset: 2px; font-weight: 600; }
-  .pub .title { font-weight: 600; }
-  .pub .venue-abbrev { font-weight: 600; }
+  .pub .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.35;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .pub .authors {
+    color: #3a3a3a;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .pub .venue {
+    color: #5a5a5a;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .pub .me { text-decoration: underline; text-underline-offset: 2px; font-weight: 600; color: #1a1a1a; }
+  .pub .venue-abbrev { font-weight: 600; color: #333; }
+  .pub .meta { font-size: 15px; color: #7a7a7a; display: block; }
   .pub .tier { color: #7a1e26; font-weight: 600; letter-spacing: 0.02em; }
-  .pub .accrate { color: #6a6a6a; font-size: 16px; }
   .pub a { color: #2f5680; }
 
   .row { display: flex; gap: 18px; margin-bottom: 8px; align-items: baseline; }
@@ -104,8 +121,10 @@
     border-radius: 50%;
     background: #999;
   }
-  ul.patents .me { text-decoration: underline; text-underline-offset: 2px; font-weight: 600; }
-  ul.patents .title { font-weight: 600; }
+  ul.patents .me { text-decoration: underline; text-underline-offset: 2px; font-weight: 600; color: #1a1a1a; }
+  ul.patents .title { font-weight: 600; font-size: 19px; display: block; margin-bottom: 2px; }
+  ul.patents .who { color: #3a3a3a; display: block; margin-bottom: 2px; }
+  ul.patents .meta { color: #7a7a7a; font-size: 15px; display: block; }
 
   .teaching-note { color: #5a5a5a; font-size: 16px; margin: -8px 0 12px; font-style: italic; }
 
@@ -153,52 +172,44 @@ key-value stores, with a focus on designs that adapt to the data distribution an
 <h2>Publications</h2>
 
 <div class="pub">
-  <span class="me">Jin Yang</span>, Hyeonseok Oh, and Young-ri Choi.
-  <span class="title">TreePass: Lightweight Tree-Guided Cache Management for B<sup>+</sup>-tree Key-Value Stores</span>.
-  Proceedings of the 25th USENIX Conference on File and Storage Technologies
-  (<span class="venue-abbrev">FAST&nbsp;'27</span>), 2027, to appear.
-  <span class="tier">[top-tier]</span>
-  [<a href="https://github.com/unist-ssl/TreePass">code</a>]
-  <span class="accrate">[acc. rate 19.6% (18/92, Spring cycle)]</span>
+  <span class="title">TreePass: Lightweight Tree-Guided Cache Management for B<sup>+</sup>-tree Key-Value Stores</span>
+  <span class="authors"><span class="me">Jin Yang</span>, Hyeonseok Oh, and Young-ri Choi.</span>
+  <span class="venue">Proceedings of the 25th USENIX Conference on File and Storage Technologies (<span class="venue-abbrev">FAST&nbsp;'27</span>), 2027, to appear.</span>
+  <span class="meta"><span class="tier">[top-tier]</span> &nbsp; [<a href="https://github.com/unist-ssl/TreePass">code</a>] &nbsp; [acc. rate 19.6% (18/92, Spring cycle)]</span>
 </div>
 
 <div class="pub">
-  <span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, Sam H. Noh, and Young-ri Choi.
-  <span class="title">A Dynamic Characteristic Aware Index Structure Optimized for Real-world Datasets</span>.
-  ACM Transactions on Storage (<span class="venue-abbrev">TOS</span>), 21(2), 2025.
-  [<a href="https://doi.org/10.1145/3707642">paper</a>]
+  <span class="title">A Dynamic Characteristic Aware Index Structure Optimized for Real-world Datasets</span>
+  <span class="authors"><span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, Sam H. Noh, and Young-ri Choi.</span>
+  <span class="venue">ACM Transactions on Storage (<span class="venue-abbrev">TOS</span>), 21(2), 2025.</span>
+  <span class="meta">[<a href="https://doi.org/10.1145/3707642">paper</a>]</span>
 </div>
 
 <div class="pub">
-  Heejin Yoon, <span class="me">Jin Yang</span>, Juyoung Bang, Sam H. Noh, and Young-ri Choi.
-  <span class="title">Advocating for Key-Value Stores with Workload Pattern Aware Dynamic Compaction</span>.
-  Proceedings of the 16th ACM Workshop on Hot Topics in Storage and File Systems
-  (<span class="venue-abbrev">HotStorage&nbsp;'24</span>), 2024.
-  [<a href="https://doi.org/10.1145/3655038.3665955">paper</a>]
+  <span class="title">Advocating for Key-Value Stores with Workload Pattern Aware Dynamic Compaction</span>
+  <span class="authors">Heejin Yoon, <span class="me">Jin Yang</span>, Juyoung Bang, Sam H. Noh, and Young-ri Choi.</span>
+  <span class="venue">Proceedings of the 16th ACM Workshop on Hot Topics in Storage and File Systems (<span class="venue-abbrev">HotStorage&nbsp;'24</span>), 2024.</span>
+  <span class="meta">[<a href="https://doi.org/10.1145/3655038.3665955">paper</a>]</span>
 </div>
 
 <div class="pub">
-  <span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, Sam H. Noh, and Young-ri Choi.
-  <span class="title">DyTIS: A Dynamic Dataset Targeted Index Structure Simultaneously Efficient for Search, Insert, and Scan</span>.
-  Proceedings of the 18th European Conference on Computer Systems
-  (<span class="venue-abbrev">EuroSys&nbsp;'23</span>), pp. 800–816, Rome, Italy, 2023.
-  <span class="tier">[top-tier]</span>
-  [<a href="https://doi.org/10.1145/3552326.3587434">paper</a>]
-  [<a href="https://github.com/unist-ssl/DyTIS">code</a>]
-  <span class="accrate">[acc. rate 16.7% (54/323)]</span>
+  <span class="title">DyTIS: A Dynamic Dataset Targeted Index Structure Simultaneously Efficient for Search, Insert, and Scan</span>
+  <span class="authors"><span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, Sam H. Noh, and Young-ri Choi.</span>
+  <span class="venue">Proceedings of the 18th European Conference on Computer Systems (<span class="venue-abbrev">EuroSys&nbsp;'23</span>), pp. 800–816, Rome, Italy, 2023.</span>
+  <span class="meta"><span class="tier">[top-tier]</span> &nbsp; [<a href="https://doi.org/10.1145/3552326.3587434">paper</a>] &nbsp; [<a href="https://github.com/unist-ssl/DyTIS">code</a>] &nbsp; [acc. rate 16.7% (54/323)]</span>
 </div>
 
 <h2>Patents</h2>
 <ul class="patents">
   <li>
-    Young-ri Choi, <span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, and Sam H. Noh.
-    <span class="title">Method and Apparatus for Performing Dynamic Hashing to Store Key Values in an Ordered State</span>.
-    KR 10-2683404 (granted Jul. 2024); US 2024/0048358 A1 (Feb. 2024).
+    <span class="title">Method and Apparatus for Performing Dynamic Hashing to Store Key Values in an Ordered State</span>
+    <span class="who">Young-ri Choi, <span class="me">Jin Yang</span>, Heejin Yoon, Gyeongchan Yun, and Sam H. Noh.</span>
+    <span class="meta">KR 10-2683404 (granted Jul. 2024) &nbsp; US 2024/0048358 A1 (Feb. 2024)</span>
   </li>
   <li>
-    Young-ri Choi, Songyi Lee, <span class="me">Jin Yang</span>, and Sam H. Noh.
-    <span class="title">Method and Apparatus for Converting Data Key Value</span>.
-    KR 10-2388458 (granted Apr. 2022).
+    <span class="title">Method and Apparatus for Converting Data Key Value</span>
+    <span class="who">Young-ri Choi, Songyi Lee, <span class="me">Jin Yang</span>, and Sam H. Noh.</span>
+    <span class="meta">KR 10-2388458 (granted Apr. 2022)</span>
   </li>
 </ul>
 
